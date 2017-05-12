@@ -1,39 +1,76 @@
 body {
   font-family: 'Fredericka the Great', cursive;
   /*border-radius: 50%;*/
-  background-color: white;
-  /*border: 50px solid white;*/
+  /*background-color: black;*/
 }
 
-img {
+/*img {
   padding: 100px;
+}*/
+
+.header {
+    background-color: transparent;
+    background-image: url("../img/header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+    font-size: 170%;
+    height: 300px;
+    text-align: center;
 }
 
-.picture {
-  padding-top: 150px;
-  text-align: center;
-  background-image: url("../img/pizza.png");
-  background-position: center;
-  height: auto;
-  font-size: 170%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  /*border-radius: 100%;*/
-  color: black;
-
-
-}
-
-.container-fluid {
+.container {
   background-color: white;
-  border: 10px solid black;
+  /*border: 1px solid black;*/
 
 }
 
 #pizza {
     padding-top: 10%;
-    padding-bottom: 50%;
-    font-size: 40px;
+    padding-bottom: 30%;
+    font-size: 20px;
     font-weight: bolder;
-    text-align: center;
+    padding-left: 10%;
+}
+
+#customer-name {
+
+}
+
+.labels {
+
+}
+
+/*.my-alert {
+  background-color: #FF6347;
+  color: white;
+  max-width: 80%;
+  margin-bottom: 2%;
+  padding: 3% 2% 1% 6%;
+  font-size: .95em;
+  border-radius: 5px;
+}*/
+
+#size-alert,
+#name-alert {
+  display: none;
+}
+
+#output {
+  display: none;
+}
+
+
+
+.btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 8%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-family: 'Fredericka the Great', cursive;
+  background-color: white
+  hover: pointer;
+
 }
