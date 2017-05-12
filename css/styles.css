@@ -1,0 +1,39 @@
+body {
+  font-family: 'Fredericka the Great', cursive;
+  /*border-radius: 50%;*/
+  background-color: white;
+  /*border: 50px solid white;*/
+}
+
+img {
+  padding: 100px;
+}
+
+.picture {
+  padding-top: 150px;
+  text-align: center;
+  background-image: url("../img/pizza.png");
+  background-position: center;
+  height: auto;
+  font-size: 170%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /*border-radius: 100%;*/
+  color: black;
+
+
+}
+
+.container-fluid {
+  background-color: white;
+  border: 10px solid black;
+
+}
+
+#pizza {
+    padding-top: 10%;
+    padding-bottom: 50%;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
