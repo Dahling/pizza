@@ -18,21 +18,14 @@
 
     <form id="pizza">
       <div class="form-group">
-        <div class="row">
-          <div class="col-md-5">
-            <h4>Name</h4>
-              <div id="name-alert" class="my-alert bg-danger">
-              <p>Hey, Good Lookin'. What's your name?</p>
-              </div>
-              <input id="customer-name" type="text" class="form-control" placeholder="Name for Order">
-          </div>
-        </div>
+        <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Miss Snob" required>
       </div>
       <br>
       <div class="form-group">
         <div class="row">
           <div class="col-md-12">
-            <h3>Size</h3>
+            <h3>Snobby Size</h3>
           </div>
         </div>
         <div class="row">
@@ -40,10 +33,10 @@
           </div>
           <div class="col-md-4">
             <select class="form-control" id="pizza-size" required>
-              <option value="Personal Snobby Pizza">Personal (Mini)</option>
-              <option value="Small Snobby Pizza">Small</option>
-              <option value="Medium Snobby Pizza">Medium</option>
-              <option value="Large Snobby Pizza">Large</option>
+              <option value="Personal Snobby Pizza">Personal (Mini) Snob</option>
+              <option value="Small Snobby Pizza">Small Snob</option>
+              <option value="Medium Snobby Pizza">Medium Snob</option>
+              <option value="Large Snobby Pizza">Large Snob</option>
             </select>
           </div><!--column two-->
         </div><!--row one-->
@@ -53,21 +46,21 @@
     <div class="form-group">
       <div class="row">
         <div class="col-md-12">
-          <h3>Sauce</h3>
+          <h3>Snobby Sauce</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <input type="checkbox" name="toppings" value=" Organic Tomato Sauce">
-          <label for="toppings-tomato-sauce">Tomato Sauce</label>
+          <label for="toppings-tomato-sauce">Organic Tomato Sauce</label>
         </div>
         <div class="col-md-4">
           <input type="checkbox" name="toppings" value=" Garlic and Olive Oil Base">
           <label for="toppings-oil">Organic Garlic and Olive Oil</label>
         </div>
         <div class="col-md-4">
-          <input type="checkbox" name="toppings" value=" Organic Pesto Base">
-          <label for="toppings-pesto">Pesto</label>
+          <input type="checkbox" name="toppings" value=" Organic Pesto">
+          <label for="toppings-pesto">Organic Pesto</label>
         </div>
       </div>
     </div>
@@ -75,7 +68,7 @@
   <br>
   <div class="row">
     <div class="col-md-12">
-      <h3>Toppings</h3>
+      <h3>Snobby Toppings</h3>
     </div>
   </div>
   <div class="row">
@@ -118,7 +111,7 @@
   <br>
   <div class="row">
     <div class="col-md-12">
-      <h3>Cheeses</h3>
+      <h3>Snobby Cheeses</h3>
     </div>
   </div>
   <div class="row">
@@ -171,22 +164,19 @@
       </form>
 
       <div class="row">
-        <div class="col-md-12">
-          <div id="pizza-order-output">
+        <div id="pizza-order-output">
           <ul id="pizza-order-list">
           </ul>
-          </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-12">
-          <div id="pizza-order-detail">
-            <h2><span class="pizza-size"></span></h2>
-            <h2><strong><span class="pizza-ingredients"></span></strong></h2>
-            <h2>Your Snobby Pizza Total:</p>
-            <h2>$ <span class="order-total"></span><h2>
-          </div>
+        <div id="pizza-order-detail">
+          <h2><span class="name"></span>'s Order Summary</h2>
+          <h2><span class="pizza-size"></span></h2>
+          <h2>Snobby Ingredients: <strong><span class="pizza-ingredients"></span></strong></h2>
+          <h2>Snobby Pizza Total:</h2>
+          <h2>$ <span class="order-total"></span>.55<h2>
         </div>
       </div>
 

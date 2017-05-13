@@ -24,6 +24,10 @@ body {
 
 }
 
+.order-total {
+
+}
+
 #pizza {
     padding-top: 10%;
     padding-bottom: 2%;
@@ -45,26 +49,17 @@ body {
 
 }
 
-/*.my-alert {
-  background-color: #FF6347;
-  color: white;
-  max-width: 80%;
-  margin-bottom: 2%;
-  padding: 3% 2% 1% 6%;
-  font-size: .95em;
-  border-radius: 5px;
-}*/
 
 #size-alert,
 #name-alert {
   display: none;
 }
 
-#output {
-  display: none;
+
+ul {
+  list-style: none;
+  margin-left: 0;
 }
-
-
 
 .btn {
   margin-top: 40px;
@@ -76,6 +71,15 @@ body {
   font-family: 'Fredericka the Great', cursive;
   background-color: white
   hover: pointer;
+
+}
+.second {
+    background-color: black;
+    color: white;
+    margin-left: 15%;
+}
+
+.name {
 
 }
 

@@ -1,68 +1,61 @@
+// Business Logic
 
-// business logic
-
+// Pizza Constructor
 function Pizza(size) {
-  this.size = size;
-  this.ingredients = [];
+  this.pizzasize = size;
+  this.pizzaingredients = [];
 };
 
+// Customer Constructor
+function Customer(name, address) {
+  this.name = name;
+}
 
+// Price Prototype Method
 Pizza.prototype.price = function() {
-  var price = 15;
+  var price = 20;
 
-if (this.size === "Large Snobby Pizza") {
-  price += 15;
-} else if (this.size === "Medium Snobby Pizza") {
-  price += 10;
-} else if (this.size === "Small Snobby Pizza") {
-  price += 5;
-} else {
-    price += 0;
+  if (this.pizzasize === "Large") {
+    price += 10;
+  } else if (this.pizzasize === "Medium") {
+    price += 15;
+  } else if (this.pizzasize === "Small") {
+    price += 15;
+  } else {
+    price += 5;
   }
 
-if (this.ingredients.length === 0) {
-  price *= 1;
-} else {
-  price += this.ingredients.length;
-}
+  if (this.pizzaingredients.length === 0) {
+    price += 1;
+  } else {
+    price += this.pizzaingredients.length;
+  }
+
   return price;
-  };
+};
 
-
-
-
-function resetFields() {
-  $("input#customer-name").val("")
-  $("#pizza-size").val("size");
-  $('input[type=checkbox]').each(function() {
-      this.checked = false;
-  });
-}
-
-
-
-
-// user interface logic
+// Front-End User Logic
 $(document).ready(function() {
   $("form#pizza").submit(function(event) {
-  event.preventDefault();
-  var orderName = $("input#customer-name").val();
-  var inputtedPizzaSize = $("select#pizza-size").val();
-  var newPizza = new Pizza(inputtedPizzaSize);
+    event.preventDefault();
+    var inputtedName = $("#name").val();
+    var inputtedPizzaSize = $("select#pizza-size").val();
+    var newCustomer = new Customer(inputtedName);
+    var newPizza = new Pizza(inputtedPizzaSize);
 
-  $.each($("input[name='toppings']:checked"), function() {
-    newPizza.ingredients.push($(this).val());
+    $.each($("input[name='toppings']:checked"), function() {
+      newPizza.pizzaingredients.push($(this).val());
+    });
+
+    $("ul#pizza-order-list").append("<li><button type='submit' class='btn '><span class='pizzaOrder'>" + newPizza.pizzasize + "Order" + "</button></span></li>");
+
+    $(".pizzaOrder").last().click(function() {
+      $("#pizza-order-detail").show();
+      $(".name").text(newCustomer.name);
+      $(".pizza-size").text(newPizza.pizzasize);
+      $(".pizza-ingredients").text(newPizza.pizzaingredients);
+      $(".order-total").text(newPizza.price());
+
+    });
   });
-
-  $("ul#pizza-order-list").append("<li><button type='submit' class='btn btn-primary btn-margin'><span class='pizzaOrder'>" + newPizza.size + " Order" + "</button></span></li>");
-
-  $(".pizzaOrder").last().click(function() {
-    $("#pizza-order-detail").show();
-    $("#customer-name").show();
-    $(".pizza-size").text(newPizza.size);
-    $(".pizza-ingredients").text(newPizza.ingredients);
-    $(".order-total").text(newPizza.price());
-
-  });
-});
 });
