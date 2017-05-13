@@ -1,7 +1,6 @@
 body {
   font-family: 'Fredericka the Great', cursive;
   /*border-radius: 50%;*/
-  /*background-color: black;*/
 }
 
 /*img {
@@ -27,7 +26,7 @@ body {
 
 #pizza {
     padding-top: 10%;
-    padding-bottom: 30%;
+    padding-bottom: 2%;
     font-size: 20px;
     font-weight: bolder;
     padding-left: 10%;
@@ -38,6 +37,11 @@ body {
 }
 
 .labels {
+
+}
+
+#pizza-order-detail {
+  padding-left: 45%;
 
 }
 
@@ -73,4 +77,8 @@ body {
   background-color: white
   hover: pointer;
 
+}
+
+#pizza-order-detail {
+  display: none;
 }
