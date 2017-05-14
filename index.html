@@ -12,173 +12,225 @@
   <body>
     <div class="container">
       <div class="header">
-        <!-- <h1>Pizza Snob</h1>
-        <h4>Home of the finest organic, wholesome ingredients.</h4> -->
+        <h1>Pizza Snob</h1>
+        <h4>The best personalized pizzas -for people who just know what they want.</h4>
       </div>
+      <form id="pizza">
+        <div class="form-group">
+          <div class="row">
+              <div class="col-md-4">
+                <h2>Name</h2>
+                <input type="text" class="form-control" id="name" placeholder="Miss Snob" required>
+            </div>
+          </div>
+        </div>
+          <br>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Snobby Size</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <select class="form-control" id="pizza-size" required>
+                  <option value="Personal Snobby Pizza">Personal (Mini) Snob</option>
+                  <option value="Small Snobby Pizza">Small Snob</option>
+                  <option value="Medium Snobby Pizza">Medium Snob</option>
+                  <option value="Large Snobby Pizza">Large Snob</option>
+                </select>
+              </div><!--column two-->
+            </div><!--row one-->
+          </div> <!--end-->
+          <br>
+          <br>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Snobby Sauce</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <input type="checkbox" name="toppings" value=" Organic Tomato Sauce">
+                <label for="toppings-tomato-sauce">Organic Tomato Sauce</label>
+              </div>
+              <div class="col-md-4">
+                <input type="checkbox" name="toppings" value=" Garlic and Olive Oil Base">
+                <label for="toppings-oil">Organic Garlic and Olive Oil</label>
+              </div>
+              <div class="col-md-4">
+                <input type="checkbox" name="toppings" value=" Organic Pesto">
+                <label for="toppings-pesto">Organic Pesto</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Snobby Toppings</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Garlic">
+              <label for="toppings-garlic">Roasted Garlic</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Olives">
+              <label for="toppings-olives">Black Olives</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Mushrooms">
+              <label for="toppings-mushrooms">Mushrooms</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Spinach">
+              <label for="toppings-spinach">Spinach</label>
+            </div>
+            </div>
+          <div class="row">
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Tomatoes">
+              <label for="toppings-tomatoes">Tomatoes</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Artichokes">
+              <label for="toppings-artichokes">Artichokes</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Onions">
+              <label for="toppings-onions">Green Onions</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Kale">
+              <label for="toppings-kale">Kale</label>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Snobby Cheeses</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Fresh Mozzarella">
+              <label for="toppings-mozzarella">Mozzarella</label>
+            </div>
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Organic Feta">
+              <label for="toppings-feta">Feta</label>
+            </div>
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Gorgonzola Goodness">
+              <label for="toppings-gorgonzola">Gorgonzola</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Delicious Fontina">
+              <label for="toppings-fontina">Fontina</label>
+            </div>
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Fresh Parmesan">
+              <label for="toppings-parmesan">Parmesan</label>
+            </div>
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" White Cheddar">
+              <label for="toppings-cheddar">White Cheddar</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Vegan Mozzarella">
+              <label for="toppings-mozzarella">Vegan Mozzarella</label>
+            </div>
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Tofu Cheese">
+              <label for="toppings-tofu">Tofu Cheese</label>
+            </div>
+            <div class="col-md-4">
+              <input type="checkbox" name="toppings" value=" Not-a-Ricotta">
+              <label for="toppings-ricotta">Not-a-Ricotta</label>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Snobby Protein</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Pepperoni">
+              <label for="toppings-pepperoni">Pepperoni</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Sausage">
+              <label for="toppings-sausage">Sausage</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Bacon">
+              <label for="toppings-bacon">Bacon</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Spicy Pulled Pork">
+              <label for="toppings-pork">Spicy Pulled Pork</label>
+            </div>
+            </div>
+          <div class="row">
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Chicken">
+              <label for="toppings-chicken">Chicken</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Organic Vegan Pepperoni">
+              <label for="toppings-pepperoni">Vegan Pepperoni</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Field Roast Italian Sausage">
+              <label for="toppings-onions">Vegan Sausage</label>
+            </div>
+            <div class="col-md-3">
+              <input type="checkbox" name="toppings" value=" Shredded Buffalo Jackfruit">
+              <label for="toppings-kale">Buffalo Jackfruit</label>
+            </div>
+          </div>
+          <br>
+          <br>
 
-    <form id="pizza">
-      <div class="form-group">
-        <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Miss Snob" required>
-      </div>
-      <br>
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Snobby Size</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-            <select class="form-control" id="pizza-size" required>
-              <option value="Personal Snobby Pizza">Personal (Mini) Snob</option>
-              <option value="Small Snobby Pizza">Small Snob</option>
-              <option value="Medium Snobby Pizza">Medium Snob</option>
-              <option value="Large Snobby Pizza">Large Snob</option>
-            </select>
-          </div><!--column two-->
-        </div><!--row one-->
-      </div> <!--end-->
-      <br>
-      <br>
-    <div class="form-group">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Snobby Sauce</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <input type="checkbox" name="toppings" value=" Organic Tomato Sauce">
-          <label for="toppings-tomato-sauce">Organic Tomato Sauce</label>
-        </div>
-        <div class="col-md-4">
-          <input type="checkbox" name="toppings" value=" Garlic and Olive Oil Base">
-          <label for="toppings-oil">Organic Garlic and Olive Oil</label>
-        </div>
-        <div class="col-md-4">
-          <input type="checkbox" name="toppings" value=" Organic Pesto">
-          <label for="toppings-pesto">Organic Pesto</label>
-        </div>
-      </div>
-    </div>
-  <br>
-  <br>
-  <div class="row">
-    <div class="col-md-12">
-      <h3>Snobby Toppings</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Garlic">
-      <label for="toppings-garlic">Roasted Garlic</label>
-    </div>
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Olives">
-      <label for="toppings-olives">Black Olives</label>
-    </div>
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Mushrooms">
-      <label for="toppings-mushrooms">Mushrooms</label>
-    </div>
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Spinach">
-      <label for="toppings-spinach">Spinach</label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Tomatoes">
-      <label for="toppings-tomatoes">Tomatoes</label>
-    </div>
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Artichokes">
-      <label for="toppings-artichokes">Artichokes</label>
-    </div>
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Onions">
-      <label for="toppings-onions">Green Onions</label>
-    </div>
-    <div class="col-md-3">
-      <input type="checkbox" name="toppings" value=" Organic Kale">
-      <label for="toppings-kale">Kale</label>
-    </div>
-  </div>
-  <br>
-  <br>
-  <div class="row">
-    <div class="col-md-12">
-      <h3>Snobby Cheeses</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Fresh Mozzarella">
-      <label for="toppings-mozzarella">Mozzarella</label>
-    </div>
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Organic Feta">
-      <label for="toppings-feta">Feta</label>
-    </div>
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Gorgonzola Goodness">
-      <label for="toppings-gorgonzola">Gorgonzola</label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Delicious Fontina">
-      <label for="toppings-fontina">Fontina</label>
-    </div>
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Fresh Parmesan">
-      <label for="toppings-parmesan">Parmesan</label>
-    </div>
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" White Cheddar">
-      <label for="toppings-cheddar">White Cheddar</label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Vegan Mozzarella">
-      <label for="toppings-mozzarella">Vegan Mozzarella</label>
-    </div>
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Tofu Cheese">
-      <label for="toppings-tofu">Tofu Cheese</label>
-    </div>
-    <div class="col-md-4">
-      <input type="checkbox" name="toppings" value=" Not-a-Ricotta">
-      <label for="toppings-ricotta">Not-a-Ricotta</label>
-    </div>
-  </div>
-        <div class="row">
-          <div class="col-md-12">
-            <button type="submit" class="btn">Order!</button>
-          </div> <!--column six-->
-        </div> <!--row six-->
+
+          <div class="row">
+            <div class="col-md-12">
+              <button type="submit" class="btn">Submit</button>
+            </div> <!--column six-->
+          </div> <!--row six-->
       </form>
+      <div class ="bottom">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="pizza-order-output">
+              <ul id="pizza-order-list">
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      <div class="row">
-        <div id="pizza-order-output">
-          <ul id="pizza-order-list">
-          </ul>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="pizza-order-detail">
+              <h2><span class="name"></span>'s Order Summary</h2>
+              <h2><span class="pizza-size"></span></h2>
+              <h2>Snobby Ingredients: <span class="pizza-ingredients"></span></h2>
+              <h2>Snobby Pizza Total:</h2>
+              <h2>$ <span class="order-total"></span>.55<h2>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div id="pizza-order-detail">
-          <h2><span class="name"></span>'s Order Summary</h2>
-          <h2><span class="pizza-size"></span></h2>
-          <h2>Snobby Ingredients: <strong><span class="pizza-ingredients"></span></strong></h2>
-          <h2>Snobby Pizza Total:</h2>
-          <h2>$ <span class="order-total"></span>.55<h2>
-        </div>
-      </div>
-
     </div><!--container-->
   </body>

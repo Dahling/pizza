@@ -1,25 +1,37 @@
 body {
   font-family: 'Fredericka the Great', cursive;
-  /*border-radius: 50%;*/
+  background-color: #8C9822;
+
 }
 
-/*img {
-  padding: 100px;
-}*/
+.bottom {
+  padding-bottom: 100px;
+}
+
 
 .header {
-    background-color: transparent;
-    background-image: url("../img/header.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: black;
-    font-size: 170%;
-    height: 300px;
+    background-color: #8c9822;
+    color: white;
+    font-size: 100px;
+    height: 150px;
+    margin-bottom: 50px;
+    margin-top: 100px;
     text-align: center;
+    width: 100%;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 150px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+
 .container {
-  background-color: white;
+  background-color: #8C9822;
   /*border: 1px solid black;*/
 
 }
@@ -29,11 +41,14 @@ body {
 }
 
 #pizza {
-    padding-top: 10%;
-    padding-bottom: 2%;
+    /*border-bottom: 8px dotted black;
+    border-left: 8px dotted black;
+    border-right: 8px dotted black;*/
     font-size: 20px;
     font-weight: bolder;
+    padding-bottom: 2%;
     padding-left: 10%;
+    padding-top: 10%;
 }
 
 #customer-name {
@@ -50,21 +65,20 @@ body {
 }
 
 
-#size-alert,
-#name-alert {
-  display: none;
+ul {
+  list-style: outside none none;
+  margin-left: 35%;
 }
 
 
-ul {
-  list-style: none;
-  margin-left: 0;
+.video {
+  float: left;
 }
 
 .btn {
   margin-top: 40px;
   margin-bottom: 40px;
-  border-radius: 8%;
+  border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 40px;
@@ -85,4 +99,24 @@ ul {
 
 #pizza-order-detail {
   display: none;
+}
+
+.pizza-ingredients {
+  color: #6D6671;
+}
+
+.form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 25px;
+    height: 50px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
 }

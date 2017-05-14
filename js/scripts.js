@@ -11,7 +11,7 @@ function Customer(name, address) {
   this.name = name;
 }
 
-// Price Prototype Method
+// Price Prototype 
 Pizza.prototype.price = function() {
   var price = 20;
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
       newPizza.pizzaingredients.push($(this).val());
     });
 
-    $("ul#pizza-order-list").append("<li><button type='submit' class='btn '><span class='pizzaOrder'>" + newPizza.pizzasize + "Order" + "</button></span></li>");
+    $("ul#pizza-order-list").append("<li><button type='submit' class='btn '><span class='pizzaOrder'>" + "Verify Order" + "</button></span></li>");
 
     $(".pizzaOrder").last().click(function() {
       $("#pizza-order-detail").show();
