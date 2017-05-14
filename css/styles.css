@@ -31,6 +31,12 @@ h4 {
   font-size: 30px;
 }
 
+h3 {
+  color: white;
+  /*color: #FF0400;*/
+  text-shadow: 1px 2px 2px #000;
+}
+
 
 .container-fluid {
   background-color: #8C9822;
@@ -48,13 +54,15 @@ h4 {
 
 
 #pizza-order-detail {
-  padding-left: 45%;
+  padding-left: 60%;
+  margin-top: -170px;
 }
 
 
 ul {
-  list-style: outside none none;
-  margin-left: 35%;
+    list-style: outside none none;
+    margin-left: 25%;
+    margin-top: -189px;
 }
 
 

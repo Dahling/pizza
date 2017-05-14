@@ -15,18 +15,18 @@ function Customer(name, address) {
 Pizza.prototype.price = function() {
   var price = 20;
 
-  if (this.pizzasize === "Large") {
+  if (this.pizzasize === "Large Snobby Pizza") {
     price += 15;
-  } else if (this.pizzasize === "Medium") {
+  } else if (this.pizzasize === "Medium Snobby Pizza") {
     price += 10;
-  } else if (this.pizzasize === "Small") {
+  } else if (this.pizzasize === "Small Snobby Pizza") {
     price += 5;
   } else {
     price += 0;
   }
 
   if (this.pizzaingredients.length === 0) {
-    price += 1;
+    price += 0;
   } else {
     price += this.pizzaingredients.length;
   }
