@@ -7,7 +7,7 @@ function Pizza(size) {
 };
 
 // Customer Constructor
-function Customer(name, address) {
+function Customer(name) {
   this.name = name;
 }
 
